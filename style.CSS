@@ -1,0 +1,33 @@
+/* --- CSS Grid Layout --- */
+.grid-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* --- Flexbox Puzzle Logic --- */
+.flex-puzzle-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows pieces to wrap to the next row */
+    justify-content: center;
+    align-items: center;
+    max-width: 600px; /* Adjust based on your puzzle size */
+    margin: 0 auto;
+    border: 5px solid #333;
+}
+
+.flex-puzzle-container img {
+    width: 200px; /* Adjust based on the size of the pieces */
+    height: auto;
+}
+
+/* --- Hiding the faulty piece --- */
+.faulty-piece {
+    display: none;
+}
+
+/* --- Design Styling --- */
+body { font-family: sans-serif; background-color: #f0f0f0; }
+header, footer { text-align: center; background: #fff; padding: 10px; border-radius: 8px; }
